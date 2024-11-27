@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "twitter-clone"
+version = "0.1.0"
+description = ""
+authors = ["TheJackIsOnFire <alexsanderonfire@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "^8.3.3"
+factory-boy = "^3.3.1"
+djangorestframework = "^3.15.2"
+django = "^5.1.3"
+django-admin = "^2.0.2"
+django-extensions = "^3.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
