@@ -1,2 +1,2 @@
 from .user import User
-from .user_connection import UserConnections
+from .user_connections import UserConnections

@@ -1,15 +1,11 @@
 from rest_framework import serializers
 
-from users.models.user_connection import UserConnections
+from users.models import UserConnections
+from users.serializers.user_serializer import UserSerializer
 
 
 class UserConnectionsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = UserConnections
-        fields = [
-            'id',
-            'main_user',
-            'followed',
-            'following',
-        ]
+        fields = ['id', 'user_main', 'followed','follower']
