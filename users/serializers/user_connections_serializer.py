@@ -8,4 +8,4 @@ class UserConnectionsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = UserConnections
-        fields = ['id', 'user_main', 'followed','follower']
+        fields = ['user_main', 'followed','follower']

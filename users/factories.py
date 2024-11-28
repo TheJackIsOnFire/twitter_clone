@@ -15,7 +15,8 @@ class UserFactory(factory.django.DjangoModelFactory):
         model = User
 
 
-class ProductFactory(factory.django.DjangoModelFactory):
+class UserConnectionsFactory(factory.django.DjangoModelFactory):
+    user_main = factory.Faker('pystr')
     followed = factory.Faker('pystr')
     follower = factory.Faker('pystr')
 
