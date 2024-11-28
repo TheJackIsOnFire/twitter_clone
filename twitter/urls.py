@@ -6,4 +6,5 @@ urlpatterns = [
     re_path('twitter/(?P<version>(v1|v2))/', include('users.urls')),
     re_path('twitter/(?P<version>(v1|v2))/', include('login.urls')),
     re_path('twitter/(?P<version>(v1|v2))/', include('post_tweets.urls')),
+    re_path('twitter/(?P<version>(v1|v2))/', include('feed_tweets.urls')),
 ]
