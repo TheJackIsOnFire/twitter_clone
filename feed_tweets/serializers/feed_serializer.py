@@ -6,3 +6,4 @@ class FeedPostSerializer(serializers.ModelSerializer):
     class Meta:
         model = FeedPost
         fields = ['id', 'user', 'tweet', 'content', 'read', 'created_at']
+        read_only_fields = ['created_at']
