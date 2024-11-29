@@ -1,5 +1,4 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
 
 class Login(models.Model):
     username = models.CharField(max_length=254, unique=True)
