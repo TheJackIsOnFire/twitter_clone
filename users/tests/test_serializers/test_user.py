@@ -4,7 +4,7 @@ from users.factories import UserFactory
 from users.serializers import UserSerializer
 
 
-class TestProductSerializer(TestCase):
+class TestUserSerializer(TestCase):
     def setUp(self) -> None:
         self.user_1 = UserFactory(id=1, fullname='Alexsander Wallace', username='Jack', email='alex@gmail.com', password='123')
         self.user_serializer = UserSerializer(self.user_1)
