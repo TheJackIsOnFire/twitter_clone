@@ -16,9 +16,9 @@ class UserFactory(factory.django.DjangoModelFactory):
 
 
 class UserConnectionsFactory(factory.django.DjangoModelFactory):
-    user_main = factory.Faker('pystr')
-    followed = factory.Faker('pystr')
-    follower = factory.Faker('pystr')
+    user_main = factory.Faker('UserFactory')
+    followed = factory.Faker('UserFactory')
+    follower = factory.Faker('UserFactory')
 
     class Meta:
         model = UserConnections
